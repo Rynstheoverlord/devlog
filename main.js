@@ -18,6 +18,18 @@ window.onload = function() {
             player_x+= speed;
         }
     }
+
+    var upbtn = document.getElementById('upbtn').onclick = function(){
+        if (player_y > 0){
+            player_y -= speed;
+        }
+    }
+
+    var upbtn = document.getElementById('downbtn').onclick = function(){
+        if (player_y < 240){
+            player_y += speed;
+        }
+    }
     
     function draw(){
         context.beginPath();
