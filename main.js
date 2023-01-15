@@ -3,7 +3,7 @@ window.onload = function() {
     var context = canvas.getContext('2d');
     
     var player_x = 50;
-    var player_y = 50;
+    var player_y = 150;
 
     let speed = 15;
 
