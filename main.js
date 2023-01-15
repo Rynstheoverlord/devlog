@@ -2,8 +2,8 @@ window.onload = function() {
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
     
-    var player_x = 300;
-    var player_y = 300;
+    var player_x = 50;
+    var player_y = 50;
 
     let speed = 15;
 
@@ -14,14 +14,14 @@ window.onload = function() {
         
     }
     var rightbtn = document.getElementById('rightbtn').onclick = function(){
-        if (player_x < 540){
+        if (player_x < 240){
             player_x+= speed;
         }
     }
     
     function draw(){
         context.beginPath();
-        context.clearRect(0,0,600,400)
+        context.clearRect(0,0,300,300)
         context.rect(player_x,player_y,50,50);
         context.strokeStyle = 'red';
         context.fillStyle = 'red';
