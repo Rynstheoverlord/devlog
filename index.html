@@ -1,50 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devlog</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
-<style>
-    body {
-        background-image: url("bg.jpg");
-    }
-    
-    .cover-title {
-        position: relative;
-        left: 35%;
-        width: 200px;
-        border-radius: 200px;
-        border: 2px solid white;
-    }
-    .title {
-        font-size: 40px;
-        text-align: center;
-        color: red;
-        font-family: monospace;
-        width: 300px;
-        position: relative;
-        left: 10%;
-    }
-    .intro-text {
-        font-size: 25px;
-        color: black;
-        font-style: bold;
-        position: relative;
-        color: white;
-    }
-</style>
+<link href="main.css" rel="stylesheet">
 <body>
-    <div class = "cover-title">
-    <h1 class = "title"> Rynstheoverlord </h1>
-    </div>
-
-    <div class = "intro-text">
- <p> Hello, Welcome to my devlog site, here you can follow and get updates on all my project releases and stuff.</p>
- <p> Check out some of my projects on <a style = "color: white;" href = "https://rynstheoverlord.itch.io/"> itch.io</a></p>
- <p> Follow me on twitter at <a style = "color: white;" href = "https://twitter.com/rynstheoverlord"> @rynstheoverlord</a></p>
-    </div>
+  <canvas id="canvas" width="600" height="400" style="position: relative; background-color: rgb(205, 205, 205); left: 30%;";></canvas>
+  
+  <button id="leftbtn" style="position: relative; top: 50px; width: 10%;">left</button>
+  <button id="rightbtn" style="position: relative; top: 50px; width: 10%;">right</button>
 </body>
+
+<script src="main.js"></script>
 </html>
